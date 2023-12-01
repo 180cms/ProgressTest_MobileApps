@@ -1,0 +1,91 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="ProgressTest.MainPage">
+    <Grid>
+        <ScrollView BackgroundColor="Black">
+            <Grid RowDefinitions="1*, 10*" ColumnDefinitions="*">
+                <Border BackgroundColor="Black"
+                        Stroke="Transparent"
+                        Grid.Row="0">
+                    <StackLayout>
+                    </StackLayout>
+                </Border>
+                <Border BackgroundColor="{StaticResource GrayBox}"
+                        Stroke="Transparent"
+                        Grid.Row="1">
+                    <StackLayout>
+                        <Label Text="Vincent van Gogh"
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               Style="{StaticResource ThamesSerial}"
+                               FontSize="20"/>
+                        <Label Text="Was a Dutch Post-Impressionist painter who is among the most famous and influential man."
+                               TextColor="White"
+                               HorizontalOptions="Center"
+                               Style="{StaticResource Bauer}"
+                               FontSize="12"
+                               Margin="0"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />                                
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout>
+
+                                <HorizontalStackLayout>
+                                    <Border Background="Transparent"
+                                    Stroke="Transparent"
+                                    Grid.Column="0">
+                                        <Label Text="$7.5m"
+                                       TextColor="White"
+                                       Style="{StaticResource Bauer}"
+                                       FontSize="12"/>
+                                    </Border>
+                                    <Border Background="Transparent"
+                                    Stroke="Transparent"
+                                    Grid.Column="1">
+                                        <Label Text="$3.5m"
+                                       TextColor="White"
+                                       Style="{StaticResource Bauer}"
+                                       FontSize="12"/>
+                                    </Border>
+                                    <Border Background="Transparent"
+                                    Stroke="Transparent"
+                                    Grid.Column="2">
+                                        <Label Text="+598%"
+                                       TextColor="White"
+                                       Style="{StaticResource Bauer}"
+                                       FontSize="12"/>
+                                    </Border>
+                                    <Border Background="Transparent"
+                                    Stroke="Transparent"
+                                    Grid.Column="3">
+                                        <Label Text="12"
+                                       TextColor="White"
+                                       Style="{StaticResource Bauer}"
+                                       FontSize="12"/>
+                                    </Border>
+                                </HorizontalStackLayout>
+                                <Label Text="Other Van Gogh Works"                                           
+                                           TextColor="White"
+                                           Style="{StaticResource Bauer}"
+                                           FontSize="12"/>
+                                <Grid>
+                                    <Border Background="Transparent"
+                                        Stroke="Transparent"
+                                        Grid.Column="4">
+                                        <Image Source="C:\Users\FYP\source\repos\ProgressTest\ProgressTest\Resources\Images\picture.png"
+                                           Aspect="AspectFit" />
+                                    </Border>
+                                </Grid>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </Border>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
