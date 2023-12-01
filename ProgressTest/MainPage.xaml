@@ -29,12 +29,13 @@
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition />
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition />                                
                                 <ColumnDefinition />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
                             <StackLayout>
-                                <HorizontalStackLayout Grid.Column="0">
+
+                                <HorizontalStackLayout>
                                     <Border Background="Transparent"
                                     Stroke="Transparent"
                                     Grid.Column="0">
@@ -72,24 +73,16 @@
                                            TextColor="White"
                                            Style="{StaticResource Bauer}"
                                            FontSize="12"/>
+                                <Grid>
+                                    <Border Background="Transparent"
+                                        Stroke="Transparent"
+                                        Grid.Column="4">
+                                        <Image Source="C:\Users\FYP\source\repos\ProgressTest\ProgressTest\Resources\Images\picture.png"
+                                           Aspect="AspectFit" />
+                                    </Border>
+                                </Grid>
                             </StackLayout>
                         </Grid>
-
-                        <!--<Grid ColumnDefinitions="*,*">
-                            <Border Background="Transparent"
-                                        Stroke="Transparent"
-                                        Grid.Column="0">
-                                <Image Source="picture.png"
-                                           Aspect="AspectFit" />
-                            </Border>
-
-                            <Border Background="Transparent"
-                                        Stroke="Transparent"
-                                        Grid.Column="1">
-                                <Image Source="picture.png"
-                                           Aspect="AspectFit" />
-                            </Border>
-                        </Grid>-->
                     </StackLayout>
                 </Border>
             </Grid>

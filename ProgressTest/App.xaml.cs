@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new PTPage();
+            MainPage = new MainPage();
         }
     }
 }
