@@ -51,15 +51,29 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Bauer Bodoni Black.otf" />
 	  <None Remove="Resources\Fonts\Thames-Serial Bold.ttf" />
+	  <None Remove="Resources\Images\image1.jpg" />
+	  <None Remove="Resources\Images\image2.jpg" />
+	  <None Remove="Resources\Images\image3.jpg" />
+	  <None Remove="Resources\Images\image4.jpg" />
+	  <None Remove="Resources\Images\image5.jpg" />
+	  <None Remove="Resources\Images\image6.jpg" />
 	  <None Remove="Resources\Images\Picture.png" />
+	  <None Remove="Resources\Images\vangogh.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="View\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="PTPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
