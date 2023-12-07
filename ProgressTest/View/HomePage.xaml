@@ -12,14 +12,26 @@
                     StrokeShape="RoundRectangle 15,15,0,0">
                 <Label Text="Fuck u" HorizontalOptions="Center" Margin="0,40,0,0"/>
             </Border>
-            <toolkit:AvatarView HeightRequest="100"
-                                WidthRequest="100"
+            <toolkit:AvatarView HeightRequest="115"
+                                WidthRequest="115"
                                 StrokeShape="Ellipse"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"
-                                Margin="0,50,0,0">
-                <Image Source="vangogh.jpg"
+                                Margin="0,50,0,0"
+                                Stroke="Yellow"
+                                StrokeThickness="3">
+                <toolkit:AvatarView
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    StrokeShape="Ellipse"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,0,0,0"
+                    Stroke="Black"
+                    StrokeThickness="5">
+                    <Image Source="vangogh.jpg"
                            Aspect="AspectFill"   />
+                </toolkit:AvatarView>
             </toolkit:AvatarView>
         </Grid>
     </ScrollView>
