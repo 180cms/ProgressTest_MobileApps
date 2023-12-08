@@ -4,42 +4,70 @@
              x:Class="ProgressTest.View.HomePage"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="HomePage"
-             Background="{StaticResource Gray}">
+             Background="Black">
     <ScrollView BackgroundColor="Transparent">
         <Grid>
-            <Border BackgroundColor="White"
+            <Border Background="{StaticResource Gray}"
                     StrokeShape="RoundRectangle 15,15,0,0"
-                    Margin="0,70,0,0">
+                    Margin="0,70,0,0"
+                    StrokeThickness="0">
                 <StackLayout>
                     <StackLayout Margin="40,0,40,0">
-                        <Label Text="Vincent Van Gogh" HorizontalOptions="Center" Margin="0,50,0,0"/>
-                        <Label Text="Dutch, 1853-1890" HorizontalOptions="Center" Margin="0,10,0,0"/>
-                        <Label Text="Was a Dutch Post-Impressionist painter who is among the most famous and influential artist in the world." HorizontalOptions="CenterAndExpand" Margin="0,20,0,20"/>
+                        <Label Text="Vincent Van Gogh" HorizontalOptions="Center" Margin="0,70,0,0" Style="{StaticResource ThamesSerial}" FontSize="24" TextColor="White"/>
+                        <Label Text="Dutch, 1853-1890" HorizontalOptions="Center" Margin="0,10,0,0" Style="{StaticResource Bauer}" FontSize="14" TextColor="White"/>
+                        <StackLayout Margin="0,20,0,10">
+                            <Label HorizontalOptions="Center"
+                                   x:Name="FuckingLabel"
+                                   Style="{StaticResource Bauer}"
+                                   TextColor="White">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Was a Dutch Post-Impressionist..." 
+                                              x:Name="FuckingSpan"
+                                              TextColor="White"/>
+                                        <Span Text=" Read More"
+                                              FontAttributes="Bold"
+                                              TextColor="Orange">
+                                        </Span>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                            
+                            <!--<Label Text="Read More"
+                                   x:Name="FuckingExpander">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>-->
+                        </StackLayout>
                     </StackLayout>
-                    <BoxView HeightRequest="0.5"/>
+                    <BoxView HeightRequest="0.5" Color="White"/>
                     <StackLayout>
                         <Grid ColumnDefinitions="*,*,*,*">
                             <StackLayout Grid.Column="0">
-                                <Label Text="$7.5m" HorizontalOptions="Center" Margin="0,20,0,0"/>
-                                <Label Text="Record" HorizontalOptions="Center" Margin="0,10,0,20"/>
+                                <Label Text="$7.5m" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="White"/>
+                                <Label Text="Record" HorizontalOptions="Center" Margin="0,10,0,20" TextColor="White"/>
                             </StackLayout>
                             <StackLayout Grid.Column="1">
-                                <Label Text="$3.5m" HorizontalOptions="Center" Margin="0,20,0,0"/>
-                                <Label Text="Average" HorizontalOptions="Center" Margin="0,10,0,20"/>
+                                <Label Text="$3.5m" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="White"/>
+                                <Label Text="Average" HorizontalOptions="Center" Margin="0,10,0,20" TextColor="White"/>
                             </StackLayout>
                             <StackLayout Grid.Column="2">
-                                <Label Text="+598%" HorizontalOptions="Center" Margin="0,20,0,0"/>
-                                <Label Text="General" HorizontalOptions="Center" Margin="0,10,0,20"/>
+                                <Label Text="+598%" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="White"/>
+                                <Label Text="General" HorizontalOptions="Center" Margin="0,10,0,20" TextColor="White"/>
                             </StackLayout>
                             <StackLayout Grid.Column="3">
-                                <Label Text="12" HorizontalOptions="Center" Margin="0,20,0,0"/>
-                                <Label Text="Items" HorizontalOptions="Center" Margin="0,10,0,20"/>
+                                <Label Text="12" HorizontalOptions="Center" Margin="0,20,0,0" TextColor="White"/>
+                                <Label Text="Items" HorizontalOptions="Center" Margin="0,10,0,20" TextColor="White"/>
                             </StackLayout>
                         </Grid>
                     </StackLayout>
-                    <BoxView HeightRequest="0.5"/>
+                    <BoxView HeightRequest="0.5" Color="White"/>
                     <StackLayout Margin="40,0,40,0">
-                        <Label Text="Other Van Gogh Works" Margin="0,30,0,20"/>
+                        <Label Text="Other Van Gogh Works" TextColor="White" Margin="0,30,0,20" Style="{StaticResource ThamesSerial}" FontSize="20" FontAttributes="Bold"/>
                         <Grid ColumnDefinitions="*,*">
                             <StackLayout Grid.Column="0" Margin="0,0,10,0">
                                 <StackLayout Margin="0,0,0,10">
@@ -51,8 +79,8 @@
                                        VerticalOptions="Center"
                                        Aspect="AspectFit"/>
                                     </Border>
-                                    <Label Text="Night View"/>
-                                    <Label Text="$950,000"/>
+                                    <Label Text="Night View" TextColor="White"/>
+                                    <Label Text="$950,000" TextColor="White"/>
                                 </StackLayout>
                                 <StackLayout Margin="0,0,0,10">
                                     <Border StrokeShape="RoundRectangle 10"
@@ -63,8 +91,8 @@
                                                VerticalOptions="Center"
                                                Aspect="AspectFit"/>
                                     </Border>
-                                    <Label Text="Landscape View"/>
-                                    <Label Text="$880,000"/>
+                                    <Label Text="Landscape View" TextColor="White"/>
+                                    <Label Text="$880,000" TextColor="White"/>
                                 </StackLayout>
                                 <StackLayout Margin="0,0,0,10">
                                     <Border StrokeShape="RoundRectangle 10"
@@ -75,8 +103,8 @@
                                                VerticalOptions="Center"
                                                Aspect="AspectFit"/>
                                     </Border>
-                                    <Label Text="Cafe Terrace at Night"/>
-                                    <Label Text="$1,920,000"/>
+                                    <Label Text="Cafe Terrace at Night" TextColor="White"/>
+                                    <Label Text="$1,920,000" TextColor="White"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="1" Margin="10,0,0,0">
@@ -89,8 +117,8 @@
                                        VerticalOptions="Center"
                                        Aspect="AspectFit"/>
                                     </Border>
-                                    <Label Text="Flower Tree"/>
-                                    <Label Text="$750,000"/>
+                                    <Label Text="Flower Tree" TextColor="White"/>
+                                    <Label Text="$750,000" TextColor="White"/>
                                 </StackLayout>
                                 <StackLayout Margin="0,0,0,10">
                                     <Border StrokeShape="RoundRectangle 10"
@@ -101,8 +129,8 @@
                                        VerticalOptions="Center"
                                        Aspect="AspectFit"/>
                                     </Border>
-                                    <Label Text="Cafe Terrace at Night"/>
-                                    <Label Text="$1,920,000"/>
+                                    <Label Text="Cafe Terrace at Night" TextColor="White"/>
+                                    <Label Text="$1,920,000" TextColor="White"/>
                                 </StackLayout>
                                 <StackLayout Margin="0,0,0,10">
                                     <Border StrokeShape="RoundRectangle 10"
@@ -113,8 +141,8 @@
                                        VerticalOptions="Center"
                                        Aspect="AspectFit"/>
                                     </Border>
-                                    <Label Text="Blossom Tree"/>
-                                    <Label Text="$1,250,000"/>
+                                    <Label Text="Blossom Tree" TextColor="White"/>
+                                    <Label Text="$1,250,000" TextColor="White"/>
                                 </StackLayout>
                             </StackLayout>
                         </Grid>
@@ -124,7 +152,7 @@
             <toolkit:AvatarView HeightRequest="115"
                                 WidthRequest="115"
                                 StrokeShape="Ellipse"
-                                Margin="0,0,0,0"
+                                Margin="0,20,0,0"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Start"
                                 Stroke="Gold"
