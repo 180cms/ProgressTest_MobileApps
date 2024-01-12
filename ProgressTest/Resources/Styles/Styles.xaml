@@ -427,4 +427,59 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <Style x:Key="Montserrat" TargetType="Label">
+        <Setter Property="FontFamily">
+            <Setter.Value>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Montserrat-VariableFont"/>
+                    <On Platform="Android" Value="Montserrat-VariableFont.ttf#Montserrat-VariableFont"/>
+                </OnPlatform>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Montserrat-Bold" TargetType="Label">
+        <Setter Property="FontFamily">
+            <Setter.Value>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Montserrat-Bold"/>
+                    <On Platform="Android" Value="Montserrat-Bold.ttf#Montserrat-Bold"/>
+                </OnPlatform>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Montserrat-ExtraBold" TargetType="Label">
+        <Setter Property="FontFamily">
+            <Setter.Value>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Montserrat-ExtraBold"/>
+                    <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-ExtraBold"/>
+                </OnPlatform>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="Montserrat-Black" TargetType="Label">
+        <Setter Property="FontFamily">
+            <Setter.Value>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Montserrat-Black"/>
+                    <On Platform="Android" Value="Montserrat-Black.ttf#Montserrat-Black"/>
+                </OnPlatform>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Pattaya" TargetType="Label">
+        <Setter Property="FontFamily">
+            <Setter.Value>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Pattaya-Regular"/>
+                    <On Platform="Android" Value="Pattaya-Regular.ttf#Pattaya-Regular"/>
+                </OnPlatform>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

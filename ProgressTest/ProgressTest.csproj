@@ -50,6 +50,11 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Bauer Bodoni Black.otf" />
+	  <None Remove="Resources\Fonts\Montserrat-Black.ttf" />
+	  <None Remove="Resources\Fonts\Montserrat-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Montserrat-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\Montserrat-VariableFont.ttf" />
+	  <None Remove="Resources\Fonts\Pattaya-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Thames-Serial Bold.ttf" />
 	  <None Remove="Resources\Images\image1.jpg" />
 	  <None Remove="Resources\Images\image2.jpg" />
@@ -68,6 +73,12 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="View\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\RegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

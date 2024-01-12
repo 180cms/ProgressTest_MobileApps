@@ -40,6 +40,13 @@
     <Color x:Key="Blue100Accent">#3E8EED</Color>
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
+    <Color x:Key="LinearOrange1">#F7A350</Color>
+    <Color x:Key="LinearOrange2">#F86B69</Color>
     <Color x:Key="Gray">#2A2A2A</Color>
+    <LinearGradientBrush x:Key="GradientOrange" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#F7A350" Offset="0" />
+        <GradientStop Color="#F96B6A" Offset="1" />
+    </LinearGradientBrush>
+
 
 </ResourceDictionary>
